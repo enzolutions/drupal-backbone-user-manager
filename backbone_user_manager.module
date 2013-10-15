@@ -54,8 +54,8 @@ function backbone_user_manager_theme($existing, $type, $theme, $path) {
     'backbone_user_manager_user_edit_template' => array(
       'variables' => array(),
     ),
-    'backbone_user_manager_app_template' => array(
-      'template' => 'backbone-user-manager-app-template',
+    'backbone_user_manager_list_template' => array(
+      'template' => 'backbone-user-manager-list-template',
       'variables' => array(),
     ),
   );
@@ -79,7 +79,7 @@ function backbone_user_manager_admin_page() {
 
   // Add templates to page.
   backbone_add_template('backbone-user-manager-user-edit-template', theme('backbone_user_manager_user_edit_template'));
-  backbone_add_template('backbone-user-manager-app-template', theme('backbone_user_manager_app_template'));
+  backbone_add_template('backbone-user-manager-list-template', theme('backbone_user_manager_list_template'));
   // Add app js.
   drupal_add_js(drupal_get_path('module', 'backbone_user_manager') . '/js/backbone_user_manager_app.js');
   // Return a container div for the app to anchor itself to.
