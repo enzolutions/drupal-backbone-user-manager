@@ -99,5 +99,21 @@ function backbone_user_manager_admin_page() {
  *   Return a standard _.template() style template.
  */
 function theme_backbone_user_manager_user_edit_template() {
-  return '';
+  return "<form class=\"edit-user-form\">
+      <legend><a href='#'>Home</a> | <%= user ? 'Edit' : 'New' %> User</legend>
+        <label>Username</label>
+        <input name=\"name\" type=\"text\" value=\"<%= user ? user.get('name') : '' %>\">
+        <label>Email</label>
+        <input name=\"mail\" type=\"text\" value=\"<%= user ? user.get('mail') : '' %>\">
+        <label>Password</label>
+        <% if(_.isNull(user)) { %>
+           <input name=\"pass\" type=\"text\" value=\"\">
+        <% } %>
+        <hr/>
+       <button type=\"submit\" class=\"btn\"><%= user ? 'Update' : 'Create' %></button>
+       <% if(user) { %>
+        <input type=\"hidden\" name=\"uid\" value=\"<%= user.id %>\" />
+       <button data-user-id=\"<%= user.id %>\" class=\"btn btn-danger delete\">Delete</button>
+       <% }; %>
+    </form>";
 }
