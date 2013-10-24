@@ -105,8 +105,8 @@ function theme_backbone_user_manager_user_edit_template() {
         <input name=\"name\" type=\"text\" value=\"<%= user ? user.get('name') : '' %>\">
         <label>Email</label>
         <input name=\"mail\" type=\"text\" value=\"<%= user ? user.get('mail') : '' %>\">
-        <label>Password</label>
         <% if(_.isNull(user)) { %>
+           <label>Password</label>
            <input name=\"pass\" type=\"text\" value=\"\">
         <% } %>
         <hr/>
