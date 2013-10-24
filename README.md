@@ -1,8 +1,5 @@
-drupal-backbone-user-manager
+Drupal User Manager with Backbone.js
 ============================
----
-Drupal User Manager using Backbone.js
-=========
 
 [![usermanager list](https://github.com/enzolutions/drupal-backbone-user-manager/raw/master/img/user_manager.png)](#features)
 
