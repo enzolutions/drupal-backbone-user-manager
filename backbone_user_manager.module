@@ -26,7 +26,7 @@ function backbone_user_manager_help($path, $arg) {
  * Our app needs a place to live, so we create a menu callback for it
  */
 function backbone_user_manager_menu() {
-  $items['backbone_user_manager'] = array(
+  $items['backbone-user-manager'] = array(
     'title' => 'Backbone User Manager',
     'description' => 'A basic Backbone Drupal app.',
     'page callback' => 'backbone_user_manager_admin_page',
