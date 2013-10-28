@@ -13,11 +13,11 @@ This project is a module for Drupal 7 to generate a user manager using Backbone.
 ##Instalation
 
 - Download Backbonejs from <a href="http://backbonejs.org">backbonejs.org</a> into libraries folders i.e sites/all/libraries/backbone/backbones.js (Tested version 1.0).
-- Download Underscoreks from <a href="http://underscorejs.org">underscorejs.org</a> into libraries folders i.e sites/all/libraries/underscore/underscorejs.js (Tested version 1.5.2).
+- Download Underscorejs from <a href="http://underscorejs.org">underscorejs.org</a> into libraries folders i.e sites/all/libraries/underscore/underscorejs.js (Tested version 1.5.2).
 - Enable modules backbone_services, services and backbone.
 - Use jQuery Update to set jQuery version to 1.7
 
 ##Usage
 
 - Access page <example.com>/backbone-user-manager.
-- Only user with correct right can add or edit users.
+- Only the user with correct rights can add or edit users.
