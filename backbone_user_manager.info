@@ -1,6 +1,10 @@
 name = Backbone User Manager
 description = An example Backbone.js app showing how edit inline users and with routers.
 dependencies[] = backbone
+dependencies[] = backbone_base
 dependencies[] = backbone_services
+dependencies[] = jquery_update
+dependencies[] = services
+dependencies[] = rest_server
 package = Backbone
 core = 7.x

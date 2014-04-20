@@ -29,7 +29,7 @@
           //Set Token to avoid Error: 'CSRF validation failed'.
           var session_token = '';
           $.ajax({
-            url:"/services/session/token",
+            url: Drupal.settings.basePath + "/services/session/token",
             type:"get",
             dataType:"text",
             error:function (jqXHR, textStatus, errorThrown) {
